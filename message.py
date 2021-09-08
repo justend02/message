@@ -21,3 +21,11 @@ for d in data:
 		new.append(d)
 print('totally', len(new), 'files have less than 100 words')
 print(new[0])
+
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('totally', len(good), 'messages have good inside')
+print(good[0])

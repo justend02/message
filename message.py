@@ -37,26 +37,26 @@ while True:
 
 print('感謝使用本功能')
 
-#sum_len = 0
-#for d in data:
-#sum_len = sum_len + len(d)
-#
-#print('average length is', sum_len/len(data))
-#
-#new = []
-#for d in data:
-#if len(d) < 100:
-#new.append(d)
-#print('totally', len(new), 'files have less than 100 words')
-#print(new[0])
-#
-#
-#
-#good = []
-#for d in data:
-#if 'good' in d:
-#good.append(d)
-#print('totally', len(good), 'messages have good inside')
-#print(good[0])
-#
-#good = [d for d in data if 'good' in d]
+sum_len = 0
+for d in data:
+	sum_len = sum_len + len(d)
+
+print('average length is', sum_len/len(data))
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('totally', len(new), 'files have less than 100 words')
+print(new[0])
+
+
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('totally', len(good), 'messages have good inside')
+print(good[0])
+
+good = [d for d in data if 'good' in d]
